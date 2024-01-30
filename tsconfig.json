@@ -1,0 +1,25 @@
+{
+  "exclude": ["node_modules", "dist"],
+  "typedocOptions": {
+    "entryPoints": ["src/index.ts"],
+    "exclude": ["src/utils/programIdl.ts"],
+    "out": "docs"
+  },
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "declaration": true,
+    "removeComments": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "dist",
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "rootDir": ".",
+    "types": ["node"]
+  },
+  "include": ["src"]
+}
